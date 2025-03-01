@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard ADMIN</title>
+
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #f3f4f7, #e5e7eb);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            margin-top: 100px;
+        }
+        h1 {
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            color: #ff6f61;
+        }
+        p {
+            font-weight: 500;
+            font-size: 1.2rem;
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card-body {
+            padding: 20px;
+            text-align: center;
+        }
+        .card-title {
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        .card img {
+            max-width: 100px;
+            margin-bottom: 15px;
+        }
+        .row {
+            margin-top: 40px;
+        }
+        .col-md-3 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+  <div class="container text-center">
+    <h1>Dashboard </h1>
+    <p><h3>Welcome Admin {{ username }}! di Deteksi Aliran Gaya Seni Lukisan</h3></p>
+
+    <div class="row mt-3 justify-content-center">
+      <div class="col-md-3 col-6">
+        <a href="/deteksi_admin">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Deteksi</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3 col-6">
+        <a href="/datalatih">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Data Latih</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="col-md-3 col-6">
+        <a href="/logout">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Logout</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    
+    
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

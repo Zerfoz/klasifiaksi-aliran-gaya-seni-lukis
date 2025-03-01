@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Deteksi Aliran Gaya Seni</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #f3f4f7, #e5e7eb);
+            color: #333;
+            padding: 0;
+            margin: 0;
+        }
+        .navbar-custom {
+            background-color: #4a90e2;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 2rem;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        .navbar-nav .nav-link {
+            color: #fff;
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ffcd3c;
+        }
+        .header-section {
+            background: linear-gradient(135deg, #ffcd3c, #ff6f61);
+            padding: 60px 0;
+            color: #fff;
+            text-align: center;
+        }
+        .header-section h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .header-section p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            font-weight: 400;
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        table {
+            width: 100%;
+            margin-top: 40px;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #4a90e2;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#">Lukisan AI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Section -->
+    <div class="container text-center mt-5">
+        <h1>Dashboard</h1>
+        <p>Welcome, Deteksi Aliran Gaya Seni Lukis</p>
+
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-3 col-6 mb-4">
+                <a href="/deteksi">
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <h5 class="card-title">Deteksi</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-6 mb-4">
+                <a href="/data">
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Latih</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-6 mb-4">
+                <a href="/tentang">
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <h5 class="card-title">Tentang</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Tabel Aliran Gaya Seni Lukis -->
+    <div class="container mt-5">
+        <h2>Tabel Aliran Gaya Seni Lukis</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Aliran</th>
+                    <th>Karakteristik</th>
+                    <th>Ciri-Ciri</th>
+                    <th>Pola</th>
+                    <th>Warna</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Impresionisme</td>
+                    <td>Menggambarkan kesan cahaya dan warna pada objek</td>
+                    <td>Eksperimental, spontan, goresan kuas kasar, warna cerah</td>
+                    <td>Bergerigi, berbintik, tidak teratur</td>
+                    <td>Cerah, kontras, komplementer</td>
+                </tr>
+                <tr>
+                    <td>Ekspresionisme</td>
+                    <td>Menggambarkan perasaan dan emosi seniman</td>
+                    <td>Subjektif, emosional, distorsi bentuk dan warna, simbolis</td>
+                    <td>Bergerigi, acak, intens</td>
+                    <td>Gelap, suram, kontras</td>
+                </tr>
+                <tr>
+                    <td>Romantisisme</td>
+                    <td>Menekankan emosi, alam</td>
+                    <td>Dramatik, emosional, imajinatif, eksotis</td>
+                    <td>Mengalir, dramatis, lembut</td>
+                    <td>Kaya, hangat, dramatis</td>
+                </tr>
+                <tr>
+                    <td>Renaisans</td>
+                    <td>Fokus pada proporsi, perspektif</td>
+                    <td>Proporsional, harmonis, realistik, klasik</td>
+                    <td>Teratur, simetris, mendetail</td>
+                    <td>Alami, seimbang, harmonis</td>
+                </tr>
+                <tr>
+                    <td>Realisme</td>
+                    <td>Menggambarkan subjek yang nyata dengan detail dan akurat</td>
+                    <td>Objektif, detail, proporsional, realistis</td>
+                    <td>Bervariasi, natural, detail</td>
+                    <td>Netral, alami, harmonis</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Peta Aliran Gaya Seni Lukis -->
+        <div class="container mt-5">
+            <h2>Peta Aliran Gaya Seni Lukis</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Gambar Peta Aliran Seni -->
+                    <img src="/static/img/peta.jpg" alt="Peta Aliran Gaya Seni Lukis" class="img-fluid" />
+                </div>
+                <div class="col-md-6">
+                    <h3>Cara Kerja:</h3>
+                    <p>Deskripsi singkat mengenai cara kerja deteksi aliran gaya seni. Misalnya, sistem ini menganalisis berbagai gaya seni lukis berdasarkan pola warna, bentuk, dan komposisi. Sistem menggunakan model pembelajaran mesin untuk mengklasifikasikan lukisan sesuai dengan aliran seni yang ada dalam peta di sebelah kiri yang ditandai dengan persegi merah.</p>
+                    
+                    <h3>Cara Menggunakan:</h3>
+                    <p>
+                        1. Upload lukisan yang ingin dianalisis.<br>
+                        2. Sistem akan melakukan pemrosesan gambar.<br>
+                        3. Hasil deteksi aliran gaya seni akan ditampilkan berdasarkan peta yang tersedia.
+                    </p>
+                    <br>
+                    <!-- Gambar tambahan di bawah -->
+                    <div class="row mt-4">
+                        <div class="col-12 text-center">
+                            <img src="/static/img/about.jpg" alt="Tips Image" class="img-fluid" style="max-width: 400px; display:block; margin:auto;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+
+    <br>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Fauzan 2024</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
